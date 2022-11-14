@@ -1,21 +1,6 @@
 ---
 on: [push, pull_request]
-name: Continuous Integration
+name: CI
 jobs:
-  unit-test:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/setup-go@v3
-      with:
-        go-version: 1.18
-    - name: Checkout code
-      uses: actions/checkout@v3
-    - name: Run unit tests
-      run: go test ./...
-    - name: Build and push
-      uses: docker/build-push-action@v3
-      with:
-        context: .
-        platforms: linux/amd64
-        push: false
- 
+  ci:
+    uses: ciriaco97/geekshub-reusable-workflow/.github/workflows/golang-ci.yaml@febfc86dec980adfc686be714281904e92f6189c 
