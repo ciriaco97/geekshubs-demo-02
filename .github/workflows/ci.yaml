@@ -3,4 +3,4 @@ on: [push, pull_request]
 name: CI
 jobs:
   ci:
-    uses: ciriaco97/geekshub-reusable-workflow/.github/workflows/golang-ci.yaml@febfc86dec980adfc686be714281904e92f6189c 
+    uses: ciriaco97/geekshub-reusable-workflow/.github/workflows/golang-ci.yaml@79d05b397e3257b07049fc16b54dc485356949c6 
