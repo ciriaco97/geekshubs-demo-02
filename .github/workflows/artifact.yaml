@@ -1,0 +1,9 @@
+---
+on: 
+  push:
+    branches:
+      - "main"
+name: Store image
+jobs:
+  upload-artifact:
+    uses: ciriaco97/geekshub-reusable-workflow/.github/workflows/golang-ci-main.yaml@main
